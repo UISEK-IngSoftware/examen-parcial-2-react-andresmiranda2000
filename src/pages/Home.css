@@ -1,0 +1,45 @@
+.home-header {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 18px 24px;
+  background-color: #5a4bd6;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.22);
+  text-align: center;
+}
+
+.home-header h1 {
+  margin: 0;
+  color: #ffeb3b;
+  font-size: 48px;
+  font-weight: 900;
+  font-family: Impact, Haettenschweiler, 'Arial Black', sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-shadow: none;
+}
+
+.home-content {
+  max-width: 1000px;
+  margin: 32px auto;
+  padding: 0 20px;
+}
+
+.home-content h2 {
+  margin: 0 0 8px;
+  font-size: 28px;
+}
+
+.home-content p {
+  margin: 0;
+  color: #5f6b7a;
+}
+
+@media (max-width: 700px) {
+  .home-header h1 {
+    font-size: 36px;
+  }
+
+  .home-content {
+    margin-top: 24px;
+  }
+}
