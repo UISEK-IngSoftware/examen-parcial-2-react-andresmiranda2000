@@ -34,6 +34,15 @@
   color: #5f6b7a;
 }
 
+.home-state {
+  min-height: 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
 @media (max-width: 700px) {
   .home-header h1 {
     font-size: 36px;
