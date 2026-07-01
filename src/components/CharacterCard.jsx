@@ -6,6 +6,12 @@ import Stack from '@mui/material/Stack'
 import Typography from '@mui/material/Typography'
 import './CharacterCard.css'
 
+const statusColors = {
+  ALIVE: 'success',
+  DEAD: 'error',
+  UNKNOWN: 'default',
+}
+
 function CharacterCard({ character }) {
   return (
     <Card className="character-card">
@@ -22,11 +28,14 @@ function CharacterCard({ character }) {
         </Typography>
 
         <Stack direction="row" spacing={1} className="character-tags">
-          <Chip label={character.gender} size="small" />
-          <Chip label={character.status} size="small" color="success" />
+          <Chip label={`Genero: ${character.gender}`} size="small" />
+          <Chip
+            label={`Estado: ${character.status}`}
+            size="small"
+            color={statusColors[character.status] || 'default'}
+          />
         </Stack>
       </CardContent>
-
     </Card>
   )
 }
